@@ -1,0 +1,106 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url('bgg.jpg'); /* Replace 'your-image-path.jpg' with the path to your image */
+    background-size: cover;
+    color: #333;
+    background-color: mediumorchid;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: plum;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.phases-container {
+    margin-bottom: 16px;
+}
+
+.phase-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.delete-phase {
+    cursor: pointer;
+    color: maroon;
+    margin-left: 8px;
+    text-decoration: double;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.add-phase-btn {
+    background-color: purple;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+button.add-phase-btn:hover {
+    background-color: mediumvioletred;
+}
+
+button[type="submit"] {
+    background-color: purple;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: mediumvioletred;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

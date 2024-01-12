@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Position Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2> Job Position</h2>
+    <form id="jobPositionForm">
+        <label for="positionName">Position Name</label>
+        <input type="text" id="positionName" name="positionName" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="department">Department</label>
+        <input type="text" id="department" name="department" required>
+
+        <label for="requirements">Requirements</label>
+        <textarea id="requirements" name="requirements" rows="4" required></textarea>
+
+        <div class="phases-container" id="phasesContainer">
+            <div class="phase-container" id="phaseContainer">
+                <label for="selectPhase">Select Phase</label>
+                <select name="selectPhase[]" required>
+            
+                    <option value="1">Phase 1</option>
+                    <option value="2">Phase 2</option>
+                </select>
+
+                <label for="sequenceNumber">Sequence Number</label>
+                <input type="number" name="sequenceNumber[]" required>
+
+                <span class="delete-phase" onclick="deletePhase(this)">Remove Phase</span>
+            </div>
+        </div>
+
+        <button type="button" class="add-phase-btn" onclick="addPhase()">Add Phase</button>
+
+        <button type="submit">Submit Job Position</button>
+    </form>
+
+    <h2> Process Phases</h2>
+    <form id="processPhaseForm">
+        <label for="processPhaseName">Process Phase Name</label>
+        <input type="text" id="processPhaseName" name="processPhaseName" required>
+
+        <label for="processDescription">Description</label>
+        <textarea id="processDescription" name="processDescription" rows="4" required></textarea>
+
+        <label for="specificInstructions">Specific Instructions</label>
+        <textarea id="specificInstructions" name="specificInstructions" rows="4" required></textarea>
+
+        <button type="submit">Submit Process Phase</button>
+    </form>
+
+    <script src="script.js">
+         
+    </script>
+
+</body>
+</html>
